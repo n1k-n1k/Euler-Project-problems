@@ -20,6 +20,19 @@ def diff(num):
     return sqr_of_sum - sum_of_sqr
 
 
+def diff_math(num):
+    """
+    math:
+    sum = n(n+1)/2
+    sum_sqr = n(n+1)(2n+1)/6
+    """
+
+    sqr_of_sum = (num * (num + 1) / 2) ** 2
+    sum_of_sqr = num * (n + 1) * (2 * n + 1) / 6
+    return int(sqr_of_sum - sum_of_sqr)
+
+
 n = 100
 # n = int(input())
 print(diff(n))
+print(diff_math(n))
